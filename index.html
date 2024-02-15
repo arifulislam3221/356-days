@@ -4,8 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- daisy -->
+        
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
 </head>
-<body>
-    <h1>testing</h1>
+<body class="lg:w-[1200px] mx-auto">
+   <header>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Homepage</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>About</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-center">
+                  <a class="btn btn-ghost text-xl">daisyUI</a>
+                </div>
+                <div class="navbar-end">
+                  <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </button>
+                  <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+                      <span class="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                  </button>
+                </div>
+                <label class="cursor-pointer grid place-items-center">
+                    <input type="checkbox" value="synthwave" class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"/>
+                    <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+                    <svg class="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                  </label>
+              </div>
+        </nav>
+   </header>
+   <main>
+    <!-- week 1 -->
+    <section id="section-1" class="drop-shadow-lg w-full mx-auto my-8 lg:w-full h-full lg:flex justify-center ">
+       <!-- day 1 -->
+        <div class="flex flex-col justify-center gap-6">
+            <div id="day-1-container" class="flex flex-col justify-center hidden w-full lg:flex-row gap-5">
+                <div class="w-full  drop-shadow-xl overflow-y-scroll p-5 bg-[#eca] ">
+                    <h1>WEEK 1</h1>
+                    <h3>Day 1: On Living the Hard Way</h3>
+                    <p>Life’s easy when you live it the hard way... and hard if you try to live it the easy way. <br>--------------Dave Kekich</p>
+                    <p>Self-discipline means living your life the hard way: resisting temptations and instant gratification, in order to receive bigger and better rewards in the future. It’s certainly easier to avoid all kinds of discomfort and indulge yourself whenever you want, but in the end, all that you get from that approach is fleeting pleasure now at the expense of your future, which otherwise could have been much better.</p>
+                    Consider a weak-willed person who, when faced with a challenge, immediately opts out. How likely is this person to achieve anything substantial in life if their primary value is to feel comfortable? How is this person going to manage a crisis that they must face? Even a relatively insignificant problem can become an insurmountable obstacle for a person who’s been living a sheltered life and always avoided what’s difficult or disagreeable.
+                    <p>Now contrast that with a person who voluntarily makes his or her life harder. They seek out and welcome challenges as opportunities to grow. Each self-imposed affliction strengthens them, so that fewer and fewer difficulties in life overwhelm them. Day by day, they immunize themselves against problems, precisely because they seek them out. When life deals them an unexpected blow, they’re ready to handle it because — thanks to living their lives the hard way — they’re always ready for hardships.</p>
+                    <div class="flex flex-col justify-center mt-5">
+                        <button id="translate-btn" class="btn btn-primary">translate</button>
+                    </div>
+                </div>
+                <div id="translate-into-bangla" class="w-full bg-[#eeac] drop-shadow-xl  overflow-y-scroll p-5 hidden">
+                    সপ্তাহ 1 <br>
+                    দিন 1: কঠিন উপায়ে জীবনযাপনের উপর <br>
+                    <br>
+                    জীবন সহজ হয় যখন আপনি এটিকে কঠিনভাবে বাস করেন... এবং কঠিন যদি আপনি এটিকে সহজ উপায়ে বাঁচতে চেষ্টা করেন।
+                    <br>--------ডেভ কেকিচ <br> <br>
+                    <br>
+        
+                    স্ব-শৃঙ্খলা মানে আপনার জীবনকে কঠিনভাবে যাপন করা: ভবিষ্যতে আরও বড় এবং আরও ভাল পুরষ্কার পাওয়ার জন্য প্রলোভন এবং তাত্ক্ষণিক তৃপ্তি প্রতিরোধ করা। সব ধরনের অস্বস্তি এড়ানো এবং যখনই আপনি চান নিজেকে প্রশ্রয় দেওয়া অবশ্যই সহজ, কিন্তু শেষ পর্যন্ত, সেই পদ্ধতি থেকে আপনি যা পান তা হল আপনার ভবিষ্যতের খরচে এখন ক্ষণস্থায়ী আনন্দ, যা অন্যথায় আরও ভাল হতে পারত।
+                    একজন দুর্বল-ইচ্ছাসম্পন্ন ব্যক্তিকে বিবেচনা করুন যিনি, যখন একটি চ্যালেঞ্জের মুখোমুখি হন, তখনই তা বাদ দেন। এই ব্যক্তির জীবনে উল্লেখযোগ্য কিছু অর্জন করার সম্ভাবনা কতটা যদি তাদের প্রাথমিক মূল্য স্বাচ্ছন্দ্য বোধ করা হয়? কিভাবে এই ব্যক্তি একটি সংকট পরিচালনা করতে যাচ্ছে যে তাদের মুখোমুখি হতে হবে? এমনকি একটি তুলনামূলকভাবে তুচ্ছ সমস্যা এমন একজন ব্যক্তির জন্য একটি অপ্রতিরোধ্য বাধা হয়ে উঠতে পারে যিনি একটি আশ্রয়হীন জীবনযাপন করছেন এবং সবসময় যা কঠিন বা অসম্মত তা এড়িয়ে গেছেন।
+                    <br>
+                    <br>
+                    এখন এমন একজন ব্যক্তির সাথে তুলনা করুন যে স্বেচ্ছায় তার জীবনকে কঠিন করে তোলে। তারা বড় হওয়ার সুযোগ হিসাবে চ্যালেঞ্জগুলি সন্ধান করে এবং স্বাগত জানায়। প্রতিটি স্ব-আরোপিত কষ্ট তাদের শক্তিশালী করে, যাতে জীবনের কম এবং কম অসুবিধা তাদের অভিভূত করে। দিনের পর দিন, তারা সমস্যাগুলির বিরুদ্ধে নিজেদের অনাক্রম্য করে, ঠিক কারণ তারা তাদের খুঁজে বের করে। যখন জীবন তাদের একটি অপ্রত্যাশিত আঘাতের সাথে মোকাবিলা করে, তারা এটি পরিচালনা করতে প্রস্তুত কারণ - তাদের জীবনকে কঠিনভাবে বাঁচানোর জন্য ধন্যবাদ - তারা সবসময় কষ্টের জন্য প্রস্তুত থাকে।
+                </div> 
+            </div>
+            <!-- day 1 btn -->
+            <button id="day-1-btn" class="btn btn-secondary">Day 1</button>
+        </div>
+    </section>
+   </main>
+   <footer>
+
+   </footer>
+   <script src="./js/app.js"></script>
+   <script>
+    const dayOneButton = document.getElementById('day-1-btn').addEventListener('click', function(){
+    const dayOneContainer = document.getElementById('day-1-container');
+    dayOneContainer.classList.remove('hidden');
+})
+   </script>
 </body>
 </html>
