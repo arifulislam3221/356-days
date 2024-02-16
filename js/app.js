@@ -33,3 +33,13 @@ for(let i = 0; i < weekContainerButton.length; i++){
     
 }
 
+const readNowButtton = document.getElementsByClassName('btn-read-now');
+for(let i = 0; i < readNowButtton.length; i++){
+    readNowButtton[i].addEventListener('click', function(e){
+        const bookContent = document.getElementsByClassName('book-content')[i];
+        bookContent.classList.remove('hidden');
+        const bookOveriew = document.getElementsByClassName('book-overiew')[i];
+        bookOveriew.classList.add('hidden')
+    })
+}
+
